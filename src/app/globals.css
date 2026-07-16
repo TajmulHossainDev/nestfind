@@ -2,12 +2,15 @@
 @import "@heroui/styles";
 
 :root {
+  /* Brand accent = Deep Teal */
   --accent: oklch(0.5109 0.0861 186.39);
   --accent-foreground: oklch(0.9845 0.0026 106.45);
 
+  /* Base page colors */
   --background: oklch(0.9845 0.0026 106.45);
   --foreground: oklch(0.2795 0.0368 260.03);
 
+  /* Custom semantic color for price tags/badges (Warm Amber) */
   --price: oklch(0.7686 0.1647 70.08);
   --price-foreground: oklch(0.2795 0.0368 260.03);
 }
@@ -21,6 +24,7 @@
   --price-foreground: oklch(0.2103 0.0059 285.89);
 }
 
+/* Make --price available as a Tailwind utility (bg-price, text-price) */
 @theme inline {
   --color-price: var(--price);
   --color-price-foreground: var(--price-foreground);
